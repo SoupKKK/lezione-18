@@ -97,23 +97,46 @@ article {
     margin-bottom: 10px;
 }
 
+@media screen and (min-width: 740px){
+    body {
+        display: flex;
+        margin: 0;
+    }
+    
+    nav {
+        flex: 0 0 23%; 
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .divisor{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    
+    .description {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+
+    .description img {
+        order: -1;
+        margin-right: 20px;
+    }
+}
 
 @media screen and (min-width: 320px) and (max-width:540px) {
     nav{
         flex-direction: column;
         align-items: center;
     }
-    article h1, ma h1{
+    article h1, main h1{
         text-align: center;
     }
     .productCards{
         display: block;
     }
 }
-
-
-
-
-
-
 
