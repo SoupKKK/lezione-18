@@ -1,0 +1,119 @@
+h1, h2, p{
+    color: brown;
+    font-weight: bolder;
+}
+
+button {
+    margin: 20px 10px 20px; 
+    background-color: yellow;
+    padding: 10px;
+    width: 50%;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.6);
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    border: none;
+}
+
+nav {
+    background-color: rgba(255, 166, 0, 0.448);
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+nav h2{
+    color: black;
+}
+
+
+nav img {
+    width: 60px;
+    float: left;
+}
+
+main h1{
+    margin-left: 10px;
+}
+
+.productCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productCards .product-card {
+    flex-basis:  48%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.productCards .product-card figure {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: center;
+}
+
+.productCards .product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.productCards .product-card button {
+    margin-top: 10px;
+    width: 70%;
+}
+
+.product-card{
+    background-color: rgba(255, 166, 0, 0.448);
+    margin: 1%;
+    border-radius: 30px;
+}
+
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    margin: 5px;
+    background-color:rgba(255, 166, 0, 0.448);
+    border-radius: 30px;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:540px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    article h1, ma h1{
+        text-align: center;
+    }
+    .productCards{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
